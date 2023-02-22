@@ -9,7 +9,32 @@
 </head>
 <body>
     <div class="formBx">
-        
+        <h1>Insert data</h1>
+        <form name="FORM">
+            <label for="name">ชื่อ</label><br>
+            <input type="text" name="name" id="name"><br>
+            <label for="surname">นามสกุล</label><br>
+            <input type="text" name="surname" id="surname"><br>
+            <label for="gender">เพศ</label><br>
+            <select name="gender" id="gender">
+                <option value="ไม่ระบุ">ไม่ระบุ</option>
+                <option value="ชาย">ชาย</option>
+                <option value="หญิง">หญิง</option>
+            </select><br>
+            <label for="birth">วันเกิด</label><br>
+            <input type="date" name="birth" id="birth"><br>
+            <button type="button" onclick="txtOut()">Add</button>
+        </form>
+    </div>
+    <div class="tableBx">
+        <table>
+            <tr>
+                <th>ชื่อ</th>
+                <th>นามสกุล</th>
+                <th>เพศ</th>
+                <th>วันเกิด</th>
+            </tr>
+        </table>
     </div>
 
     <script src="script.js"></script>
